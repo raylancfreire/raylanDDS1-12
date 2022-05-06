@@ -7,7 +7,7 @@ public class Cliente {
     String telefone;
 
     public String getNome() {
-        return nome;
+        return primeiroNome + " " + ultimoNome;
     }
 
     public void setNome(String nome) {
