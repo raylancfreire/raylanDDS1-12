@@ -3,10 +3,10 @@ package src.raylanDDS112.orientacao_a_objetos.orientacao_a_objetos_parte_2.desaf
 import static src.raylanDDS112.orientacao_a_objetos.orientacao_a_objetos_parte_2.desafio_pacotes_e_enumeradores_5_13.SituacaoConta.*;
 
 public class ContaPagar {
-    String descricao;
-    Double valor;
-    String dataVencimento;
-    Fornecedor fornecedor;
+    private String descricao;
+    private Double valor;
+    private String dataVencimento;
+    private Fornecedor fornecedor;
     public String getDescricao() {
         return descricao;
     }
