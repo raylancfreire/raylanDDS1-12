@@ -30,6 +30,6 @@ public class Principal {
         // exibe listagem de todas as contas com detalhamento
         RelatorioContas relatorio = new RelatorioContas();
         Conta[] contas = new Conta[]{contaPagar1, contaPagar2, contaReceber1, contaReceber2};
-        //relatorio.exibirListagem(contas);
+        relatorio.exibirListagem(contas);
     }
 }
