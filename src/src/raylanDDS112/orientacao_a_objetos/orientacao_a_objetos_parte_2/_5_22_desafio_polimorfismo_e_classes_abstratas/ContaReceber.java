@@ -10,12 +10,17 @@ public class ContaReceber extends Conta {
         this.setValor(valor);
         this.setDataVencimento(dataVencimento);
     }
-    public void exibirDetalhes(){
-        System.out.println("Nome da conta" + this.getDescricao() +
-                "Valor da Conta: " + this.getValor() +
-                "Data de Vencimento: " + this.getDataVencimento() +
-                "Nome do Cliente: " + this.getCliente());
+    public void exibirDetalhes() {
+        System.out.println("\nConta a Receber");
+        System.out.println("=================================");
+        System.out.println("Fornecedor: " + getCliente().getNome());
+        System.out.println("Descrição: " + getDescricao());
+        System.out.println("Valor: " + getValor());
+        System.out.println("Data de vencimento: " + getDataVencimento());
+        System.out.println("Situação: " + getSituacaoConta());
+        System.out.println("=================================");
     }
+
     public void cancelar(){
         if (this.getValor() > 50000d) {
             System.out.println("Essa conta a receber não pode ser cancelada. " +

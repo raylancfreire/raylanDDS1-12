@@ -10,11 +10,16 @@ public class ContaPagar extends Conta {
         this.setValor(valor);
         this.setDataVencimento(dataVencimento);
     }
-    public void exibirDetalhes(){
-        System.out.println("Nome da conta" + this.getDescricao() +
-                "Valor da Conta: " + this.getValor() +
-                "Data de Vencimento: " + this.getDataVencimento() +
-                "Nome do Fornecedor: " + this.getFornecedor());
+    @Override
+    public void exibirDetalhes() {
+        System.out.println("\nConta a Pagar");
+        System.out.println("=================================");
+        System.out.println("Fornecedor: " + getFornecedor().getNome());
+        System.out.println("Descrição: " + getDescricao());
+        System.out.println("Valor: " + getValor());
+        System.out.println("Data de vencimento: " + getDataVencimento());
+        System.out.println("Situação: " + getSituacaoConta());
+        System.out.println("=================================");
     }
     public void pagar() {
         if (SituacaoConta.PAGA.equals(this.getSituacaoConta())){
